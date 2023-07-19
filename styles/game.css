@@ -9,7 +9,7 @@ body {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
-    margin: 0px 200px;
+    margin: 0px 150px 0px;
 
 }
 
@@ -62,6 +62,12 @@ body {
 
 #tiktok {
     color: #25212f;
+    font-size: 20px;
+}
+
+#top-youtube {
+    font-size: 20px;
+    color: red;
 }
 
 /* banner section start  */
@@ -173,6 +179,7 @@ body {
 }
 
 
+
 /* banner section end  */
 /* online game section start  */
 .online-games {
@@ -197,7 +204,7 @@ body {
     color: #0B0223;
 
     font-family: Work Sans;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -224,23 +231,81 @@ body {
     margin-right: 24px;
 }
 
+/* play instant section start  */
+.play-instant {
+    width: 1250px;
+    height: 927px;
+    display: flex;
+    margin: 100px auto 0px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.play-instant-text {
+    width: 50%;
+    margin: 150px auto 0px;
+
+    /* padding: 100px auto 100px */
+}
+
+.play-instant-text p {
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 400px;
+    /* 166.667% */
+}
+
+#instant-title {
+    text-align: right;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.baby-img {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    bottom: 300px;
+    margin-left: -150px;
+}
+
 /* footer section start */
 footer {
-    text-align: center;
-    align-items: center;
+    padding: 50px;
     width: 100%;
     height: 536px;
     color: #FFF;
     background: #0B0223;
+    margin-top: 20px;
 
 }
 
-.footer-features,
+.footer-container {
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    line-height: 70px;
+    height: auto;
+}
+
+
 .footer-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+
 }
 
-.footer-features p {
+.footer-features a {
+    text-decoration: none;
+    margin: 40px;
     color: #FFF;
     text-align: center;
     font-family: Work Sans;
@@ -248,10 +313,64 @@ footer {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    /* margin: 30px; */
 }
+
 
 .gamer {
     color: firebrick;
+}
+
+.footer-logos {
+    margin: 40px;
+}
+
+.footer-logos a {
+    margin: 20px;
+
+
+}
+
+.fa-brands {
+    font-size: 40px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#footer-youtube {
+    background-color: red;
+    border-radius: 60%;
+}
+
+#facebook {
+    background-color: rgb(49, 49, 174);
+    border-radius: 50%;
+}
+
+
+.policy a {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.bottom {
+
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 300px;
+
 }
 
 /* footer section end  */
@@ -272,18 +391,59 @@ footer {
     }
 
     .banner-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-left: 90px;
     }
 
     .banner-text,
     .banner-img {
         width: 100%;
         flex-direction: column;
-        margin: 0px 40px;
+        margin: 0px auto 0px;
     }
 
     .game-images {
 
         flex-direction: column;
+    }
+
+    .online-games {
+        margin: 0px auto 0px 50px;
+    }
+
+    /* play instant start */
+    .play-instant {
+        flex-direction: column;
+        width: 100%;
+        margin: 100px;
+
+
+    }
+
+    .play-instant-text {
+        margin-left: -90px;
+        margin-bottom: 50px;
+    }
+
+    .play-instant-img {}
+
+    .play-instant-img img {
+        width: 100%;
+    }
+
+    .baby-img img {
+        width: 50%;
+        padding-top: 170px;
+    }
+
+    /* footer  */
+    .footer-container,
+    .footer-features {
+        flex-direction: column;
+        grid-template-columns: repeat(3, 1r);
+    }
+
+    .bottom {
+        padding: 88px 300px;
     }
 }
