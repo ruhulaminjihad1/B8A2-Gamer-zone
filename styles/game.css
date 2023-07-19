@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans:ital,wght@1,800&family=Poppins:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav-container {
+    background-color: white;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    margin: 0px 200px;
+
+}
+
+.logo-container {
+    display: flex;
+    /* text-align: center; */
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-container img {
+    width: 86.041px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.Gamer {
+    color: red;
+}
+
+.nav-list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: rgba(60, 53, 79, 1);
+
+}
+
+.nav-list-container a {
+    text-decoration: none;
+}
+
+.youtube {
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    text-align: center;
+
+}
+
+/* banner section start  */
+.banner-section {
+    display: flex;
+    width: 1920px;
+    height: 5927px;
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+}
+
+.banner-text {
+    width: 50%;
+    height: 700px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: Work Sans;
+}
+
+.play-title {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.goat-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.banner-section p {
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.banner-img {
+    width: 200px;
+}
+
+/* banner section end  */
+
+@media screen and (max-width: 576px) {
+    .nav-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 0px 30px;
+    }
+
+    .nav-list-container {
+        flex-direction: column;
+    }
+
+    .nav-list-container a {
+        margin-bottom: 30px;
+    }
+}
